@@ -1,0 +1,17 @@
+.footer-title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-title {
+  @include font-title;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--main-color);
+}
