@@ -105,6 +105,11 @@ img {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 
 .logo {
   font-family: "Raleway";
@@ -295,14 +300,18 @@ img {
 }
 
 .hero {
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero.jpg);
   background-color: #2f303a;
 }
 
 .hero__title {
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
@@ -467,15 +476,16 @@ img {
 
 .gallery-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .gallery-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .gallery-list__item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .gallery-list__btn {
@@ -509,8 +519,7 @@ img {
 }
 
 .card-set__item {
-  width: 370px;
-  margin-right: 30px;
+  width: 100%;
   margin-bottom: 30px;
   background-color: #ffffff;
   transition: box-shadow 250ms var(--cubic);
@@ -530,7 +539,7 @@ img {
 
 .card-set__box {
   padding: 20px 24px;
-  width: 370px;
+  width: 100%;
   border: 1px solid #eeeeee;
 }
 
@@ -694,10 +703,11 @@ img {
 }
 
 .modal {
+  width: 100%;
+  max-width: 450px;
   position: absolute;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  min-height: 609px;
   background-color: #fff;
   border-radius: 4px;
   top: 50%;
@@ -712,7 +722,7 @@ img {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
@@ -832,8 +842,8 @@ img {
 
 .user-policy__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
@@ -869,7 +879,7 @@ img {
   width: 100%;
   height: 1px;
   left: 0;
-  bottom: 5px;
+  bottom: 1px;
   background-color: var(--btn-color);
 }
 

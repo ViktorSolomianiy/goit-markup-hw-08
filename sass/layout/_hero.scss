@@ -1,7 +1,10 @@
 .hero {
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -11,6 +14,7 @@
 }
 
 .hero__title {
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
