@@ -1,6 +1,9 @@
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    @include flex;
+  }
 }
 
 .gallery-list__item {
@@ -10,12 +13,19 @@
     margin-right: 0;
     margin-bottom: 0;
   }
+  @media screen and (min-width: 364px) and (max-width: 475px) {
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery-list__btn {
   @include font(500, 16px, 1.63);
   font-family: "Roboto";
-
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   text-align: center;
@@ -37,10 +47,11 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-}
-
-.gallery__card-set {
-  margin-top: 50px;
+  gap: 30px;
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 }
 
 .card-set__item {
@@ -62,6 +73,9 @@
   }
   &:nth-child(n + 7) {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
   }
 }
 

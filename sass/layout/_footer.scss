@@ -5,10 +5,18 @@
 }
 
 .footer__flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .footer__address {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
 }
 
 .address__text {
@@ -37,6 +45,11 @@
   @include flex;
   flex-direction: column;
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    display: block;
+    margin-right: 86px;
+  }
 }
 
 .join__list {
@@ -44,13 +57,22 @@
   gap: 10px;
 }
 
+.join__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer__sub {
   margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sub__flex {
   @include flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .sub__input {
@@ -74,6 +96,9 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 }
 
