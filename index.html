@@ -27,7 +27,7 @@
   </head>
   <body>
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header__nav">
           <a class="logo link" href="index.html"
@@ -70,9 +70,64 @@
               >
             </li>
           </ul>
+          <button class="menu-btn menu-open-btn" type="button">
+            <svg class="menu-btn__icon" width="40" height="40">
+              <use href="./images/icons-sprite.svg#menu-open"></use>
+            </svg>
+          </button>
+          <div class="mob-menu">
+            <button class="menu-btn menu-close-btn" type="button">
+              <svg class="menu-btn__icon" width="40" height="40">
+                <use href="./images/icons-sprite.svg#menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-nav list">
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="index.html"> Студія</a>
+              </li>
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a class="mob-menu-nav__link link" href="">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mob-menu-com list">
+              <li class="mob-menu-com__item">
+                <a class="mob-menu-tel link" href="tel:">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu-com__item">
+                <a class="mob-menu-mail link" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-menu-soc list">
+              <li class="mob-menu-soc__item">
+                <a class="mob-menu-soc__link link" href=""
+                  >Instagram
+                  <span class="mob-menu-soc__line"></span>
+                </a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a class="mob-menu-soc__link link" href=""
+                  >Twitter <span class="mob-menu-soc__line"></span
+                ></a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a class="mob-menu-soc__link link" href=""
+                  >Facebook
+                  <span class="mob-menu-soc__line"></span>
+                </a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a class="mob-menu-soc__link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--Hero-->
       <section class="hero section">

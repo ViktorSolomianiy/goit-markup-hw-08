@@ -11,6 +11,10 @@
     ),
     url(../images/mobile-hero.jpg);
   background-color: #2f303a;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -23,9 +27,17 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    min-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
   padding: 10px 24px;
   margin-top: 30px;
+  // @media screen and (min-width: 1200px) {
+  //   padding: 10px 32px;
+  // }
 }

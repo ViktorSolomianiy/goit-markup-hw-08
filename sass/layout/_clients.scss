@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__item {
@@ -32,5 +36,8 @@
   }
   @media screen and (min-width: 768px) {
     width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
