@@ -7,6 +7,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .section-title {
@@ -17,4 +20,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

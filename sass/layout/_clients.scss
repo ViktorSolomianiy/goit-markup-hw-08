@@ -3,10 +3,19 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__item {
-  // width: calc((100% -30px) / 2);
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .clients__link {
@@ -21,5 +30,14 @@
   &:focus {
     fill: var(--btn-color);
     border-color: var(--btn-color);
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
