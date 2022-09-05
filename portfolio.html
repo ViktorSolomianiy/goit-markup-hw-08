@@ -21,10 +21,10 @@
   </head>
   <body>
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a class="logo link" href="index.html"
+          <a class="logo header__logo link" href="index.html"
             ><span class="logo__span logo__span--color-blue">Web</span>Studio</a
           >
           <ul class="navigation header__navigation list">
@@ -62,9 +62,83 @@
               >
             </li>
           </ul>
+          <button class="menu-btn menu-open-btn" data-menu-open type="button">
+            <svg class="menu-btn__icon" width="40" height="40">
+              <use href="./images/icons-sprite.svg#menu-open"></use>
+            </svg>
+          </button>
+          <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-container">
+              <div class="mob-menu__top">
+                <button
+                  class="menu-btn menu-close-btn"
+                  data-menu-close
+                  type="button"
+                >
+                  <svg class="menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons-sprite.svg#menu-close"></use>
+                  </svg>
+                </button>
+                <ul class="mob-menu-nav list">
+                  <li class="mob-menu-nav__item">
+                    <a class="mob-menu-nav__link link" href="index.html"
+                      >Студія
+                    </a>
+                  </li>
+                  <li class="mob-menu-nav__item">
+                    <a class="mob-menu-nav__link link" href="portfolio.html"
+                      ><span class="mob-menu-nav__span mob-menu-nav__span--blue"
+                        >Портфоліо</span
+                      ></a
+                    >
+                  </li>
+                  <li class="mob-menu-nav__item">
+                    <a class="mob-menu-nav__link link" href="">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="mob-menu-com list">
+                <li class="mob-menu-com__item">
+                  <a class="mob-menu-tel link" href="tel:">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu-com__item">
+                  <a class="mob-menu-mail link" href="">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mob-menu-soc list">
+                <li class="mob-menu-soc__item">
+                  <a class="mob-menu-soc__link link" href=""
+                    >Instagram
+                    <span
+                      class="mob-menu-soc__span mob-menu-soc__span--line"
+                    ></span>
+                  </a>
+                </li>
+                <li class="mob-menu-soc__item">
+                  <a class="mob-menu-soc__link link" href=""
+                    >Twitter
+                    <span
+                      class="mob-menu-soc__span mob-menu-soc__span--line"
+                    ></span
+                  ></a>
+                </li>
+                <li class="mob-menu-soc__item">
+                  <a class="mob-menu-soc__link link" href=""
+                    >Facebook
+                    <span
+                      class="mob-menu-soc__span mob-menu-soc__span--line"
+                    ></span>
+                  </a>
+                </li>
+                <li class="mob-menu-soc__item">
+                  <a class="mob-menu-soc__link link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
-    </header> -->
+    </header>
     <!-- Gallery -->
     <main>
       <section class="gallery section">
