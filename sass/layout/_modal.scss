@@ -116,8 +116,12 @@
 }
 
 .user-policy {
-  @include flex;
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include flex;
+  }
 }
 
 .user-policy__input:checked + .user-policy__text > .user-policy__check {
@@ -127,7 +131,7 @@
 }
 
 .user-policy__text {
-  @include font(400, 12px, 1.17);
+  @include font(400, 12px, 1.16);
   @include flex;
   cursor: pointer;
   color: var(--second-color);
@@ -162,6 +166,9 @@
     left: 0;
     bottom: 1px;
     background-color: var(--btn-color);
+    @media screen and (min-width: 1200px) {
+      bottom: 4px;
+    }
   }
 }
 

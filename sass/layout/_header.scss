@@ -174,12 +174,18 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+  transform: translateY(0);
+  transition: transform 400ms var(--cubic);
   > .mob-container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+}
+
+.mob-menu.is-hidden {
+  transform: translateY(-100%);
 }
 
 .menu-btn {
