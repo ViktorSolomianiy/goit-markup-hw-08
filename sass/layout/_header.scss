@@ -175,7 +175,9 @@
   height: 100vh;
   background-color: #fff;
   transform: translateY(0);
-  transition: transform 400ms var(--cubic);
+  opacity: 1;
+  transition: transform 400ms var(--cubic), opacity 400ms var(--cubic),
+    visibility 250ms var(--cubic);
   > .mob-container {
     height: 100%;
     display: flex;
@@ -186,6 +188,7 @@
 
 .mob-menu.is-hidden {
   transform: translateY(-100%);
+  opacity: 0;
 }
 
 .menu-btn {
