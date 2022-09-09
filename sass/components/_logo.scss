@@ -1,10 +1,7 @@
 .logo {
   font-family: "Raleway";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
+  @include font(700, 24px, 1.17);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #000000;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -31,7 +28,7 @@
 }
 
 .logo__span--color-blue {
-  color: #2196f3;
+  color: var(--btn-color);
 }
 
 .logo__text--color-white {

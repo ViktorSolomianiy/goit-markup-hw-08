@@ -89,18 +89,12 @@
 }
 
 .card-set__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(700, 18px, 2, 0.06em);
   color: var(--main-color);
 }
 
 .card-set__text {
-  margin-top: 4px;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include font(400, 16px, 1.88);
   color: var(--second-color);
 }
 
@@ -115,9 +109,6 @@
   position: absolute;
   padding-left: 24px;
   padding-right: 24px;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   top: 0;

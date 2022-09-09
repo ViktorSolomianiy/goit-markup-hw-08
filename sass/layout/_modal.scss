@@ -121,6 +121,7 @@
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     @include flex;
+    margin-right: 12px;
   }
 }
 

@@ -5,6 +5,18 @@
   --btn-gallery-color: #f5f4fa;
   --icon-color: #afb1b8;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --hero-gradient: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
 }
 
 @mixin flex {

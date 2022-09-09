@@ -25,11 +25,11 @@
 .about__text {
   @include font(700, 14px, 1.14);
   position: absolute;
+  width: 370px;
   padding: 27px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
   bottom: 0;
-  width: 370px;
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }

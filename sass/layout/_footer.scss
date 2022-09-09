@@ -74,9 +74,7 @@
 }
 
 .join__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
 }
 
 .footer__sub {
