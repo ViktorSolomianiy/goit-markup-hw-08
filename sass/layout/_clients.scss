@@ -14,13 +14,12 @@
     width: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 768px) {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
 .clients__link {
   @include flex;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
